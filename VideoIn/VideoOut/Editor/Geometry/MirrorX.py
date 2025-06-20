@@ -4,8 +4,7 @@
 
 __auto_imports__ = [
     'random',
-    'moviepy.editor.VideoFileClip',
-    'moviepy.video.fx'
+    'moviepy.video.fx.MirrorX.MirrorX'
 ]
 
 
@@ -13,7 +12,7 @@ def apply(input_source, **kwargs):
     """
     Apply a Mirror X effect on the provided input. 
     """
-    output = clip.with_effects([fx.MirrorX])
+    output = input_source.with_effects([MirrorX()])
     return output
 
 
