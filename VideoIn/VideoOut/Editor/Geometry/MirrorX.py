@@ -5,7 +5,7 @@
 __auto_imports__ = [
     'random',
     'moviepy.editor.VideoFileClip',
-    'moviepy.video.fx'
+    'moviepy.fx'
 ]
 
 
