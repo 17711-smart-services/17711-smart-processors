@@ -13,7 +13,7 @@ def apply(input_source, **kwargs):
     """
     Apply a Mirror X effect on the provided input. 
     """
-    output = clip.with_effects([fx.MirrorX])
+    output = input_source.with_effects([fx.MirrorX])
     return output
 
 
